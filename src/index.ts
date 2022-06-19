@@ -1,10 +1,10 @@
 import http from 'http';
-import { Users } from './users.js';
+import { Users } from './users';
 import * as uuid from 'uuid';
 import { IUserData, IUser } from './users.js';
 import 'dotenv/config';
 
-const server = http.createServer((req, res) => {
+export const server = http.createServer((req, res) => {
   if (req.url === '/api/users' && req.method === 'GET') {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/json');
