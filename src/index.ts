@@ -2,6 +2,7 @@ import http from 'http';
 import { Users } from './users.js';
 import * as uuid from 'uuid';
 import { IUserData, IUser } from './users.js';
+import 'dotenv/config';
 
 const server = http.createServer((req, res) => {
   if (req.url === '/api/users' && req.method === 'GET') {
