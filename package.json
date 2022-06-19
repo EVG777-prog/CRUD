@@ -29,8 +29,5 @@
   "dependencies": {
     "uuid": "^8.3.2"
   },
-  "type": "module",
-  "ts-node": {
-    "esm": true
-  }
+  "type": "module"
 }
